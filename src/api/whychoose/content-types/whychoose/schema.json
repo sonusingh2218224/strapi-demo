@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "whychooses",
+  "info": {
+    "singularName": "whychoose",
+    "pluralName": "whychooses",
+    "displayName": "whychoose"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    },
+    "secondheading": {
+      "type": "string"
+    },
+    "seconddescription": {
+      "type": "blocks"
+    }
+  }
+}
